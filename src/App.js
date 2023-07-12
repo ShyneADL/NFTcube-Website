@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './App.css'
+// Importing the components
 
-function App() {
+import CTA from './components/cta/CTA'
+import Article from './components/article/Article'
+import Brand from './components/brand/Brand'
+import Navbar from './components/navbar/Navbar'
+import Blog from './containers/blog/Blog'
+import Features from './containers/features/Features'
+import Footer from './containers/footer/Footer'
+import Header from './containers/header/Header'
+import Possibility from './containers/possibility/Possibility'
+import Nftcube from './containers/nftcube/Nftcube'
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <div className='gradient__bg'>
+        <Navbar/>
+        <Header/>
+      </div>
+      <Brand/>
+      <Nftcube/>
+      <Features/>
+      <Possibility/>
+      <CTA/>
+      <Blog />
+      <Footer />
+
     </div>
-  );
+  )
 }
 
 export default App;
