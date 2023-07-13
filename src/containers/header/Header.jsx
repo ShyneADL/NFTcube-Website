@@ -8,8 +8,9 @@ const Header = () => {
     <div className="nft__header section__padding" id="home">
 
       <div className="nft__header-content">
-        <h1 style={{color:"red"}}>Enter into the world of WEB3.0</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores doloremque rerum minus porro maiores iusto facilis, hic nobis fuga tempore excepturi aut possimus odit. Ipsum dolore neque dicta minima ullam?</p>
+        <h1 className="gradient-text">Welcome to NFT Hero: Your Gateway to the Future of Digital Assets!</h1>
+        <p>Discover the World of NFTs:
+At NFT Hero, we are passionate about the boundless possibilities that NFTs (Non-Fungible Tokens) bring to the world of art, collectibles, and digital ownership. Immerse yourself in a vibrant ecosystem where creativity knows no bounds, and every digital creation holds a unique story.</p>
 
         <div className="nft__header-content__input">
           <input type='email' placeholder='Your email address'></input>
