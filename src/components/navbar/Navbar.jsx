@@ -17,42 +17,39 @@ const Menu = () => (
 const Navbar = () => {
   const [ toggleMenu, setToggleMenu ] = useState(false);
   return (
-    <div className='nft__navbar'>
+    <div className="nft__navbar">
       <div className="nft__navbar-links">
         <div className="nft__navbar-links_logo">
-          <img src={logo} alt="logo" />
+          <img src={logo} />
         </div>
-        <div className='nft__navbar-links_container'>
-       <Menu/>
+        <div className="nft__navbar-links_container">
+          <Menu/>
+
         </div>
-        <div className="nft__navbar-sign">
-          <p>Sign in</p>
-          <button type="button">Sign up</button>
-        </div>
-        <div className="nft__navbar-menu">
-        {toggleMenu
+      </div>
+      <div className="nft__navbar-sign">
+        <p>Sign in</p>
+        <button type="button">Sign up</button>
+      </div>
+      <div className="nft__navbar-menu">
+        { toggleMenu
           ? <RiCloseLine color="#fff" size={27} onClick={() => setToggleMenu(false)} />
           : <RiMenu3Line color="#fff" size={27} onClick={() => setToggleMenu(true)} />
           }
-
-        {toggleMenu && ( 
-           <div className='.nft3__navbar-menu_container scale-up-center'>
-            <div className='nft__navbar-menu_container-links'>
+        { toggleMenu && (
+        <div className="nft__navbar-menu_container scale-up-center">
+          <div className="nft__navbar-menu_container-links">
             <Menu/>
-            <div className="nft__navbar-menu-_container-links-sign">
-              <p>Sign in</p>
-              <button type="button">Sign up</button>
-            </div>
-            </div>
-           </div>
-        )}
-
+          </div>
+          <div className="nft__navbar-menu_container-links-sign">
+            <p>Sign in</p>
+            <button type="button">Sign up</button>
+          </div>
         </div>
-
-    
+        )}
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Navbar;
