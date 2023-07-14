@@ -20,7 +20,7 @@ const Navbar = () => {
     <div className="nft__navbar">
       <div className="nft__navbar-links">
         <div className="nft__navbar-links_logo">
-          <img src={logo} />
+          <img src={logo} alt='logo' />
         </div>
         <div className="nft__navbar-links_container">
           <Menu/>

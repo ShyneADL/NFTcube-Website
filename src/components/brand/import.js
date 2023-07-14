@@ -1,15 +1,13 @@
-import coinbase from '../..assets/coinbase'
-import metamask from '../..assets/metamask'
-import opensea from '../..assets/opensea'
-import dlabs from '../..assets/dlabs'
-import flow from '../..assets/flow'
-import rarible from '../..assets/rarible'
+import coinbase from '../../assets/coinbase.png'
+import metamask from '../../assets/metamask.png'
+import opensea from '../../assets/opensea.png'
+import dlabs from '../../assets/dlabs.png'
+import rarible from '../../assets/rarible.png'
 
 export {
     coinbase,
     metamask,
     opensea,
     dlabs,
-    flow,
     rarible
 }

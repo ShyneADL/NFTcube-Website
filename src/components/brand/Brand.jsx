@@ -1,8 +1,6 @@
 import React from 'react';
 import './brand.css';
-import {
-  coinbase, metamask, opensea, dlabs, flow, rarible
-} from './import'
+import { coinbase, metamask, opensea, dlabs, rarible } from './import'
 
 const Brand = () => {
   return (
@@ -18,9 +16,6 @@ const Brand = () => {
       </div>
       <div>
         <img src= {dlabs} alt='dapper labs'/>
-      </div>
-      <div>
-        <img src={flow} alt='flow'/>
       </div>
       <div>
         <img src={rarible} alt='rarible'/>
