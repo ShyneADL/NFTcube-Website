@@ -4,6 +4,7 @@
     align-items: center;
 
     padding: 2rem 6rem;
+    z-index: 100;
 }
 
 .nft__navbar-links {
@@ -115,6 +116,7 @@
 
     .nft__navbar-menu {
         display: flex;
+        z-index: 100;
     }
 }
 
@@ -127,6 +129,7 @@
 @media screen and (max-width: 550px) {
     .nft__navbar {
         padding: 2rem;
+        
     }
 
     .nft__navbar-sign {
