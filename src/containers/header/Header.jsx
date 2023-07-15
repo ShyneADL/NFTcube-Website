@@ -1,7 +1,7 @@
 import React from 'react'
 import './header.css'
 import people from '../../assets/people.png'
-import nft from '../../assets/NFT Hero.png'
+import nft from '../../assets/NFT Hero.jpg'
 
 const Header = () => {
   return (
