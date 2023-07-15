@@ -9,7 +9,7 @@ const Footer = () => (
     </div>
 
     <div className="nft__footer-btn">
-      <p>Request Early Access</p>
+      <button>Request Early Access</button>
     </div>
 
     <div className="nft__footer-links">

@@ -26,15 +26,17 @@
     justify-content: center;
     align-items: center;
 
+    
+}
+
+.nft__footer-btn button {
     padding: 1rem;
     border: 1px solid #fff;
     text-align: center;
+    background: none;
 
     margin-bottom: 10rem;
     cursor: pointer;
-}
-
-.nft__footer-btn p {
     font-size: 18px;
     font-family: var(--font-family);
     line-height: 21px;
