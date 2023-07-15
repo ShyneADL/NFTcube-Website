@@ -1,6 +1,6 @@
 .nft__header {
     display: flex;
-    
+    flex-direction: row;
 }
 
 .nft__header-content {
@@ -19,22 +19,24 @@
     font-size: 62px;
     line-height: 75px;
     letter-spacing: -0.04em;
-    z-index: 100;
 }
 
 .nft__header-content p {
     font-family: var(--font-family);
+    font-weight: 400;
     font-size: 20px;
-    line-height: 27px;
+    line-height: 28px;
     color: var(--color-text);
 
     margin-top: 1.5rem;
 }
 
 .nft__header-content__input {
-    width:100%;
+    width: 100%;
     margin: 2rem 0 1rem;
+
     display: flex;
+    flex-direction: row;
 }
 
 .nft__header-content__input input {
@@ -42,37 +44,36 @@
     width: 100%;
     min-height: 50px;
     font-family: var(--font-family);
-    background: #052D56;
-    border-top-right-radius:5px;
-    border-bottom-right-radius: 5px;
+    font-weight: 400;
     font-size: 20px;
-    line-height: 27px;
-    color: #fff;
+    line-height: 28px;
+    background: var(--color-footer);
+    border: 2px solid var(--color-footer);
     padding: 0 1rem;
     outline: none;
-    border: 2px solid var(--color-footer);
-    background: var(--color-footer);
+    color: #fff;
 
-
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 .nft__header-content__input button {
     flex: 0.6;
     width: 100%;
     min-height: 50px;
-
-    background-color: var(--color-primary);
-    border-top-right-radius:5px;
-    border-bottom-right-radius: 5px;
-   
-    font-weight: bold;
+    font-family: var(--font-family);
+    font-weight: 400;
     font-size: 20px;
-    line-height: 27px;
+    line-height: 28px;
+    background: #FF4820;
+    border: 2px solid #FF4820;
+    padding: 0 1rem;
     color: #fff;
     cursor: pointer;
     outline: none;
-    padding: 0 1rem;
-    border: none;
+
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .nft__header-content__people {
@@ -80,21 +81,21 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    flex-direction: row;
 
     margin-top: 2rem;
-
 }
 
 .nft__header-content__people img {
-    width: 180px;
+    width: 181.79px;
     height: 38px;
 }
 
 .nft__header-content__people p {
-    margin-left: 1rem;
+    margin: 0 0 0 1rem;
     font-family: var(--font-family);
     font-weight: 500;
-    font-size: 12px; 
+    font-size: 12px;
     line-height: 38px;
     color: #fff;
     text-align: center;
@@ -110,7 +111,6 @@
 .nft__header-image img {
     width: 100%;
     height: 100%;
-
 }
 
 @media screen and (max-width: 1050px) {
@@ -120,20 +120,20 @@
 
     .nft__header-content {
         margin: 0 0 3rem;
-    } 
+    }
 }
 
 @media screen and (max-width: 650px) {
-    .nft__header h1 {
+    .nft__header-content h1 {
         font-size: 48px;
         line-height: 60px;
     }
 
-    .nft__header p {
+    .nft__header-content p {
         font-size: 16px;
         line-height: 24px;
     }
-
+    
     .nft__header-content__people {
         flex-direction: column;
     }
@@ -142,25 +142,26 @@
         margin: 0;
     }
 
-    .nft__header-content__input input, .nft_header-content__input button {
+    .nft__header-content__input input,
+    .nft__header-content__input button {
         font-size: 16px;
         line-height: 24px;
-    } 
-
+    }
 }
 
 @media screen and (max-width: 490px) {
-    .nft__header h1{
+    .nft__header-content h1 {
         font-size: 36px;
         line-height: 48px;
     }
 
-    .nft__header p {
+    .nft__header-content p {
         font-size: 14px;
         line-height: 24px;
-    } 
+    }
 
-    .nft__header-content__input input, .nft__hader-content__input button {
+    .nft__header-content__input input,
+    .nft__header-content__input button {
         font-size: 12px;
         line-height: 16px;
     }
