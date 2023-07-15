@@ -6,7 +6,7 @@ import logo from '../../assets/Logo.svg'
 const Menu = () => (
   <>
    <p><a href='#home'>Home</a></p>
-   <p><a href='#blog'>What is NFT Cube?</a></p>
+   <p><a href='#whnft'>What is NFT Cube?</a></p>
    <p><a href='#features'>OpenSea</a></p>
    <p><a href='#possibility'>Case Studies</a></p>
    <p><a href='#nftcube'>Library</a></p>
