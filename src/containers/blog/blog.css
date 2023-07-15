@@ -11,8 +11,8 @@
 }
 
 .nft__blog-heading h1 {
-    font-size: 62px;
-    line-height: 75px;
+    font-size: 3.875rem;
+    line-height: 4.6875rem;
     font-family: var(--font-family);
     font-weight: 800;
 }
@@ -64,15 +64,15 @@
     }
 
     .nft__blog-heading h1 {
-        font-size: 46px;
-        line-height: 52px;
+        font-size: 2.875rem;
+        line-height: 3.25rem;
     }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 34.375rem) {
     .nft__blog-heading h1 {
-        font-size: 34px;
-        line-height: 42px;
+        font-size: 2.125rem;
+        line-height: 2.625rem;
     }
 
 }

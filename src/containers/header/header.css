@@ -16,16 +16,16 @@
 .nft__header-content h1 {
     font-family: var(--font-family);
     font-weight: 800;
-    font-size: 62px;
-    line-height: 75px;
+    font-size: 3.875rem;
+    line-height: 4.6875rem;
     letter-spacing: -0.04em;
 }
 
 .nft__header-content p {
     font-family: var(--font-family);
     font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
     color: var(--color-text);
 
     margin-top: 1.5rem;
@@ -45,8 +45,8 @@
     min-height: 50px;
     font-family: var(--font-family);
     font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
     background: var(--color-footer);
     border: 2px solid var(--color-footer);
     padding: 0 1rem;
@@ -63,8 +63,8 @@
     min-height: 50px;
     font-family: var(--font-family);
     font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
     background: var(--color-primary);
     border: 2px solid var(--color-primary);
     padding: 0 1rem;
@@ -95,8 +95,8 @@
     margin: 0 0 0 1rem;
     font-family: var(--font-family);
     font-weight: 500;
-    font-size: 12px;
-    line-height: 38px;
+    font-size: 0.75rem;
+    line-height: 2.375rem;
     color: #fff;
     text-align: center;
 }
@@ -125,13 +125,13 @@
 
 @media screen and (max-width: 650px) {
     .nft__header-content h1 {
-        font-size: 48px;
-        line-height: 60px;
+        font-size: 3rem;
+        line-height: 3.75rem;
     }
 
     .nft__header-content p {
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 1rem;
+        line-height: 1.5rem;
     }
     
     .nft__header-content__people {
@@ -144,25 +144,25 @@
 
     .nft__header-content__input input,
     .nft__header-content__input button {
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 1rem;
+        line-height: 1.5rem;
     }
 }
 
 @media screen and (max-width: 490px) {
     .nft__header-content h1 {
-        font-size: 36px;
-        line-height: 48px;
+        font-size: 2.25rem;
+        line-height: 3rem;
     }
 
     .nft__header-content p {
-        font-size: 14px;
-        line-height: 24px;
+        font-size: 0.875rem;
+        line-height: 1.5rem;
     }
 
     .nft__header-content__input input,
     .nft__header-content__input button {
-        font-size: 12px;
-        line-height: 16px;
+        font-size: 0.75rem;
+        line-height: 1rem;
     }
 }

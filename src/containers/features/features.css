@@ -17,16 +17,16 @@
 }
 
 .nftcube__features-heading h1 {
-    font-size: 34px;
-    line-height: 45px;
+    font-size: 2.125rem;
+    line-height: 2.8125rem;
     font-weight: 800;
     font-family: var(--font-family);
 }
 
 .nftcube__features-heading p {
     color: var(--color-subtext);
-    font-size: 16px;
-    line-height: 30px;
+    font-size: 1rem;
+    line-height: 1.875rem;
     font-weight: 500;
     font-family: var(--font-family);
 
@@ -54,7 +54,7 @@
 
 @media screen and (max-width: 550px) {
     .nftcube__features-heading h1 {
-        font-size: 28px;
-        line-height: 38px;
+        font-size: 1.75rem;
+        line-height: 2.375rem;
     }
 }

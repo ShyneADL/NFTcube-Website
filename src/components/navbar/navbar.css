@@ -49,8 +49,8 @@
     color: #fff;
     font-family: var(--font-family);
     font-weight: 500;
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 1.125rem;
+    line-height: 1.5625rem;
     text-transform: capitalize;
 
     margin: 0 1rem;
@@ -64,8 +64,8 @@
     background: #9800fe ;
     font-family: var(--font-family);
     font-weight: 500;
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 1.125rem;
+    line-height: 1.5625rem;
     border: none;
     outline: none;
     cursor: pointer;

@@ -37,11 +37,11 @@
 
     margin-bottom: 10rem;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-family: var(--font-family);
-    line-height: 21px;
+    line-height: 1.3125rem;
     color: #fff;
-    word-spacing: 2px;
+    word-spacing: 0.125rem;
 }
 
 .nft__footer-links {
@@ -74,8 +74,8 @@
 
 .nft__footer-links_logo p {
     font-family: var(--font-family);
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 0.75rem;
+    line-height: 0.9375rem;
     color: #fff;
 }
 
@@ -86,8 +86,8 @@
 }
 
 .nft__footer-links_div h4 {
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 0.875rem;
+    line-height: 1.0625rem;
     font-family: var(--font-family);
     color: #fff;
 
@@ -95,8 +95,8 @@
 }
 
 .nft__footer-links_div p {
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 0.75rem;
+    line-height: 0.9375rem;
     font-family: var(--font-family);
     color: #fff;
 
@@ -111,23 +111,23 @@
 }
 
 .nft__footer-copyright p {
-    font-size: 12px;
+    font-size: 0.75rem;
     font-family: var(--font-family);
-    line-height: 15px;
+    line-height: 0.9375rem;
     color: #fff;
 }
 
 @media screen and (max-width: 850px) {
     .nft__footer-heading h1 {
-        font-size: 44px;
-        line-height: 50px;
+        font-size: 2.75rem;
+        line-height: 3.125rem;
     }
 }
 
 @media screen and (max-width: 550px) {
     .nft__footer-heading h1 {
-        font-size: 34px;
-        line-height: 42px;
+        font-size: 2.125rem;
+        line-height: 2.625rem;
     }
 
     .nft__footer-links div {
@@ -135,14 +135,14 @@
     }
 
     .nft__footer-btn p {
-        font-size: 14px;
-        line-height: 20px;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
     }
 }
 
 @media screen and (max-width: 400px) {
     .nft__footer-heading h1 {
-        font-size: 27px;
-        line-height: 38px;
+        font-size: 1.6875rem;
+        line-height: 2.375rem;
     }
 }

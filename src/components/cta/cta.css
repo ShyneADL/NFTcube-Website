@@ -20,15 +20,15 @@
 
 .nft__cta-content p {
     font-family: var(--font-family);
-    font-size: 12px;
-    line-height: 30px;
+    font-size: 0.75rem;
+    line-height: 1.875rem;
     font-weight: 500;
 }
 
 .nft__cta-content h3 {
     font-family: var(--font-family);
-    font-size: 24px;
-    line-height: 45px;
+    font-size: 1.5rem;
+    line-height: 2.8125rem;
     font-weight: 800;
 }
 
@@ -45,8 +45,8 @@
     color: #fff;
     font-family: var(--font-family);
     font-weight: 700;
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 1.125rem;
+    line-height: 1.875rem;
     padding: 0.5rem 1rem;
     border-radius: 2rem;
 
@@ -73,12 +73,12 @@
     }
 
     .nft__cta-content h3 {
-        font-size: 18px;
-        line-height: 32px;
+        font-size: 1.125rem;
+        line-height: 2rem;
     }
 
     .nft__cta-btn button {
-        font-size: 14px;
-        line-height: 28px;
+        font-size: 0.875rem;
+        line-height: 1.75rem;
     }
 }
