@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import logo from '../../assets/Logo.svg';
 import './navbar.css';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -15,13 +16,13 @@ const Navbar = () => {
         <div className="nft__navbar-links_container">
           <p><a href="#home">Home</a></p>
           <p><a href="#whnft">What is NFTcube?</a></p>
-          <p><a href="#possibility">Open AI</a></p>
-          <p><a href="#features">Case Studies</a></p>
+          <p><a href="#features">Features</a></p>
+          <p><a href="#possibility">Docs</a></p>
           <p><a href="#blog">Blog</a></p>
         </div>
       </div>
       <div className="nft__navbar-sign">
-        <p>Sign in</p>
+        <p><Link to='sign'>Sign in</Link></p>
         <button type="button">Sign up</button>
       </div>
       <div className="nft__navbar-menu">

@@ -8,8 +8,8 @@ const Possibility = () => (
       <img src={nftImage} alt="nft" />
     </div>
     <div className="nft__possibility-content">
-      <h1 className="gradient__text">The possibilities are <br /> beyond your imagination</h1>
-      <p>Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment. Party we years to order allow asked of.</p>
+      <h1 className="gradient__text">Unlock the Full Potential of your <br /> collectibles  beyond your imagination</h1>
+      <p>At NFTcube, we guarantee to enhance your NFT experience, providing you with a comprehensive and feature-rich platform to explore, collect, and engage with the exciting world of NFTs.</p>
       <h4>Request Early Access to Get Started</h4>
     </div>
   </div>
