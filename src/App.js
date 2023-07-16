@@ -3,7 +3,6 @@ import './App.css'
 // Importing the components
 
 import CTA from './components/cta/CTA'
-import Article from './components/article/Article'
 import Brand from './components/brand/Brand'
 import Navbar from './components/navbar/Navbar'
 import Blog from './containers/blog/Blog'
