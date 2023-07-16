@@ -6,7 +6,7 @@ const Nftcube = () => {
   return (
     <div className="nft__nftcube section__margin" id='whnft'>
       <div className="nft__nftcube-feature">
-        <Feature title='What is NFTcube' text={'NFT Hero is a digital platform that serves as a gateway to the world of NFTs (Non-Fungible Tokens) and the future of digital assets. It is designed to provide a comprehensive and immersive experience for individuals interested in exploring, collecting, and investing in unique digital creations.'}/>
+        <Feature title='What is NFTcube' text={'NFTcube is a digital platform that serves as a gateway to the world of NFTs (Non-Fungible Tokens) and the future of digital assets. It is designed to provide a comprehensive and immersive experience for individuals interested in exploring, collecting, and investing in unique digital creations.'}/>
       </div>
       <div className="nft__nftcube-heading">
         <h1 className="gradient__text">Unleashing the Power of Digital Collectibles</h1>
