@@ -39,7 +39,7 @@ const Footer = () => (
     </div>
 
     <div className="nft__footer-copyright">
-      <p>@2023 NFTcube. All rights reserved.</p>
+      <p>@2023 NFTcube. All rights reserved. Built by ADL.</p>
     </div>
   </div>
 );
