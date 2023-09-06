@@ -39,7 +39,8 @@ const Footer = () => (
     </div>
 
     <div className="nft__footer-copyright">
-      <p>@2023 NFTcube. All rights reserved. Built by Aladi.</p>
+      <p>@2023 NFTcube. All rights reserved. </p>
+      <p className='gradient__text' style={{fontSize:'22px', marginTop:'1rem'}}>Built by Ifeanyi Aladi.</p>
     </div>
   </div>
 );

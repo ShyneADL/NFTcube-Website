@@ -1,8 +1,16 @@
+import  Blog  from './blog/Blog.jsx';
+import  Features  from './features/Features.jsx';
+import  Footer  from './footer/Footer.jsx';
+import  Header  from './header/Header.jsx';
+import  Nftcube  from './nftcube/Nftcube.jsx';
+import  Possibility  from './possibility/Possibility.jsx';
 
 
-// export { default as Blog } from './blog/Blog';
-// export { default as Features } from './features/Features';
-// export { default as Footer } from './footer/Footer';
-// export { default as Header } from './header/Header';
-// export { default as nftcube } from './nftcube/nftcube';
-// export { default as Possibility } from './possibility/Possiblity';
+export {
+    Blog,
+    Features,
+    Footer,
+    Header,
+    Nftcube,
+    Possibility,
+}
