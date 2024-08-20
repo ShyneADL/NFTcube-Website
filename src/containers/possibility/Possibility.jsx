@@ -1,11 +1,17 @@
 import React from 'react';
-import nftImage from '../../assets/nft-image.png';
+import { skull, monkey, hand, ball, nftImage } from '../../assets'
 import './possibility.css';
+import gsap from 'gsap'
+import { useGSAP } from '@gsap/react'
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
 
 const Possibility = () => (
-  <div className="nft__possibility section__padding" id="possibility">
-    <div className="nft__possibility-image">
+  <div className="nft__possibility section__padding relative" id="possibility">
+    <div className="nft__possibility-image absolute left-[-200px] top-0">
       <img src={nftImage} alt="nft" />
+    </div>
+    <div className='w-[500px]'>
     </div>
     <div className="nft__possibility-content">
       <h1 className="gradient__text">Unlock the Full Potential of your <br /> collectibles  beyond your imagination</h1>

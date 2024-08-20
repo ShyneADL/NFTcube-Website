@@ -1,11 +1,11 @@
 import React from 'react';
 import Article from '../../components/article/Article';
-import blog01 from '../../assets/blog01.jpg';
-import blog02 from '../../assets/blog02.png';
-import blog03 from '../../assets/blog03.png';
-import blog04 from '../../assets/blog04.png';
-import blog05 from '../../assets/blog05.jpg';
+import { blog01, blog02, blog03, blog04, blog05 } from '../../assets'
 import './blog.css';
+
+import gsap from 'gsap'
+import { useGSAP } from '@gsap/react'
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const Blog = () => (
   <div className="nft__blog section__padding" id="blog">

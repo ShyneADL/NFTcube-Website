@@ -1,51 +1,80 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import logo from '../../assets/Logo.svg';
 import './navbar.css';
-import { Link } from 'react-router-dom';
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap'
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const navbarRef = useRef(null);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;   
+      if (scrollTop > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useGSAP(() => {
+    if (navbarRef.current) {
+      gsap.to(navbarRef.current, {
+        backgroundColor: scrolled ? '#040C18' : '', 
+        padding: scrolled ? '6.4px 96px' : '32px 96px',
+        duration: 0.5, 
+        ease: 'back', 
+      });
+    }
+  }, [scrolled]);
   return (
-    <div className="nft__navbar">
-      <div className="nft__navbar-links">
-        <div className="nft__navbar-links_logo">
-          <img src={logo} alt='logo'/>
-        </div>
-        <div className="nft__navbar-links_container">
-          <p><a href="#home">Home</a></p>
-          <p><a href="#whnft">What is NFTcube?</a></p>
-          <p><a href="#features">Features</a></p>
-          <p><a href="#possibility">Docs</a></p>
-          <p><a href="#blog">Blog</a></p>
-        </div>
-      </div>
-      <div className="nft__navbar-sign">
-        <p><Link to='sign'>Sign in</Link></p>
-        <button type="button">Sign up</button>
-      </div>
-      <div className="nft__navbar-menu">
-        {toggleMenu
-          ? <RiCloseLine color="#fff" size={27} onClick={() => setToggleMenu(false)} />
-          : <RiMenu3Line color="#fff" size={27} onClick={() => setToggleMenu(true)} />}
-        {toggleMenu && (
-        <div className="nft__navbar-menu_container scale-up-center">
-          <div className="nft__navbar-menu_container-links">
+    <nav className={`w-full`}>
+      <div ref={navbarRef} className={`nft__navbar fixed top-0 px-[6rem] w-full`}>
+        <div className="nft__navbar-links">
+          <div className="nft__navbar-links_logo sticky">
+            <img src={logo} alt='logo'/>
+          </div>
+          <div className="nft__navbar-links_container sticky top-10">
             <p><a href="#home">Home</a></p>
-            <p><a href="#wnft">What is nft?</a></p>
-            <p><a href="#possibility">Open AI</a></p>
-            <p><a href="#features">Case Studies</a></p>
-            <p><a href="#blog">Library</a></p>
-          </div>
-          <div className="nft__navbar-menu_container-links-sign">
-            <p>Sign in</p>
-            <button type="button">Sign up</button>
+            <p><a href="#whnft">What is NFTcube?</a></p>
+            <p><a href="#features">Features</a></p>
+            <p><a href="#possibility">Docs</a></p>
+            <p><a href="#blog">Blog</a></p>
           </div>
         </div>
-        )}
+        <div className="nft__navbar-sign">
+          <p>Sign in</p>
+          <button type="button">Sign up</button>
+        </div>
+        <div className="nft__navbar-menu">
+          {toggleMenu
+            ? <RiCloseLine color="#fff" size={27} onClick={() => setToggleMenu(false)} />
+            : <RiMenu3Line color="#fff" size={27} onClick={() => setToggleMenu(true)} />}
+          {toggleMenu && (
+          <div className="nft__navbar-menu_container scale-up-center">
+            <div className="nft__navbar-menu_container-links">
+              <p><a href="#home">Home</a></p>
+              <p><a href="#wnft">What is nft?</a></p>
+              <p><a href="#possibility">Open AI</a></p>
+              <p><a href="#features">Case Studies</a></p>
+              <p><a href="#blog">Library</a></p>
+            </div>
+            <div className="nft__navbar-menu_container-links-sign">
+              <p>Sign in</p>
+              <button type="button">Sign up</button>
+            </div>
+          </div>
+          )}
+        </div>
       </div>
-    </div>
+    </nav>
   );
 };
 

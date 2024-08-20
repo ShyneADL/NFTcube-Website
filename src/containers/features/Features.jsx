@@ -1,6 +1,9 @@
 import React from 'react';
 import Feature from '../../components/feature/Feature';
 import './features.css';
+import gsap from 'gsap'
+import { useGSAP } from '@gsap/react'
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const featuresData = [
   {
