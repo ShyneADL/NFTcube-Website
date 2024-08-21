@@ -859,7 +859,7 @@ var _queueRefreshAll = function _queueRefreshAll2() {
   }
 };
 var _refresh100vh = function _refresh100vh2() {
-  _body2.appendChild(_div100vh);
+  _bodyw2.appendChild(_div100vh);
   _100vh = !_normalizer2 && _div100vh.offsetHeight || _win2.innerHeight;
   _body2.removeChild(_div100vh);
 };

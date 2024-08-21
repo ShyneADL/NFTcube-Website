@@ -1,9 +1,9 @@
-import React from 'react';
-import './article.css';
+import React from "react";
+import "./article.css";
 
 const Article = ({ imgUrl, date, text }) => (
   <div className="nft__blog-container_article">
-    <div className="nft__blog-container_article-image">
+    <div className="nft__blog-container_article-image overflow-hidden">
       <img src={imgUrl} alt="blog_image" />
     </div>
     <div className="nft__blog-container_article-content">

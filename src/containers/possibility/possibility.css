@@ -8,7 +8,14 @@
     justify-content: flex-start;
     align-items: center;
     margin-right: 2rem;
-    transform: rotate(40deg);
+    /* transform: rotate(40deg); */
+}
+
+.monkey_image {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 400px;
 }
 
 .nft__possibility-image img {

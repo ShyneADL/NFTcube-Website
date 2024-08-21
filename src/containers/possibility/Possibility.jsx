@@ -1,24 +1,82 @@
-import React from 'react';
-import { skull, monkey, hand, ball, nftImage } from '../../assets'
-import './possibility.css';
-import gsap from 'gsap'
-import { useGSAP } from '@gsap/react'
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import React, { useRef } from "react";
+import { skull, monkey, hand, ball, nftImage } from "../../assets";
+import "./possibility.css";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+/**
+ * Possibility is a component that renders a section of the app that is
+ * dedicated to showcasing the possibilities of NFTcube. It is responsible for
+ * rendering the animated image and the accompanying text content.
+ *
+ * @returns {JSX.Element} The rendered Possibility component.
+ */
+const Possibility = () => {
+  const possRef = useRef(null);
+  const imgRef = useRef(null);
+  const textRef = useRef(null);
 
-
-const Possibility = () => (
-  <div className="nft__possibility section__padding relative" id="possibility">
-    <div className="nft__possibility-image absolute left-[-200px] top-0">
-      <img src={nftImage} alt="nft" />
+  useGSAP(() => {
+    gsap.fromTo(
+      imgRef.current,
+      {
+        x: -600,
+      },
+      {
+        scrollTrigger: {
+          trigger: possRef.current,
+          start: "200px bottom",
+          end: "500px bottom",
+          toggleActions: "play none none reverse",
+        },
+        x: -290,
+        y: -100,
+        rotate: 40,
+      }
+    );
+    gsap.fromTo(
+      textRef.current,
+      {
+        y: 200,
+        opacity: 0,
+      },
+      {
+        y: 0,
+        opacity: 1,
+        scrollTrigger: {
+          trigger: possRef.current,
+          start: "200px bottom",
+          end: "bottom bottom",
+        },
+        duration: 1,
+      }
+    );
+  }, []);
+  return (
+    <div
+      ref={possRef}
+      className="nft__possibility section__padding relative"
+      id="possibility"
+    >
+      <div ref={imgRef} className="nft__possibility-image absolute top-0">
+        <img src={nftImage} alt="nft" />
+      </div>
+      <div className="w-[500px]"></div>
+      <div ref={textRef} className="nft__possibility-content">
+        <h1 className="gradient__text">
+          Unlock the Full Potential of your <br /> collectibles beyond your
+          imagination
+        </h1>
+        <p>
+          At NFTcube, we guarantee to enhance your NFT experience, providing you
+          with a comprehensive and feature-rich platform to explore, collect,
+          and engage with the exciting world of NFTs.
+        </p>
+        <h4>Request Early Access to Get Started</h4>
+      </div>
     </div>
-    <div className='w-[500px]'>
-    </div>
-    <div className="nft__possibility-content">
-      <h1 className="gradient__text">Unlock the Full Potential of your <br /> collectibles  beyond your imagination</h1>
-      <p>At NFTcube, we guarantee to enhance your NFT experience, providing you with a comprehensive and feature-rich platform to explore, collect, and engage with the exciting world of NFTs.</p>
-      <h4>Request Early Access to Get Started</h4>
-    </div>
-  </div>
-);
+  );
+};
 
 export default Possibility;
