@@ -18,23 +18,68 @@ const Possibility = () => {
   const textRef = useRef(null);
 
   useGSAP(() => {
-    gsap.fromTo(
-      imgRef.current,
-      {
-        x: -600,
-      },
-      {
-        scrollTrigger: {
-          trigger: possRef.current,
-          start: "200px bottom",
-          end: "500px bottom",
-          toggleActions: "play none none reverse",
+    let mm = gsap.matchMedia();
+    // Desktop animation for the image
+    mm.add("(min-width: 1025px)", () => {
+      gsap.fromTo(
+        imgRef.current,
+        {
+          x: -600,
         },
-        x: -290,
-        y: -100,
-        rotate: 40,
-      }
-    );
+        {
+          scrollTrigger: {
+            trigger: possRef.current,
+            start: "200px bottom",
+            end: "500px bottom",
+            toggleActions: "play none none reverse",
+          },
+          x: -290,
+          y: -100,
+          rotate: 40,
+        }
+      );
+    });
+
+    // Tab animation for the image
+    mm.add("(min-width: 476px) and (max-width: 1024px)", () => {
+      gsap.fromTo(
+        imgRef.current,
+        {
+          x: -600,
+        },
+        {
+          scrollTrigger: {
+            trigger: possRef.current,
+            start: "200px bottom",
+            end: "500px bottom",
+            toggleActions: "play none none reverse",
+          },
+          x: -300,
+          y: -220,
+          rotate: 40,
+        }
+      );
+    });
+    // Mobile animation for the image
+    mm.add("(max-width: 475px)", () => {
+      gsap.fromTo(
+        imgRef.current,
+        {
+          x: -600,
+        },
+        {
+          scrollTrigger: {
+            trigger: possRef.current,
+            start: "200px bottom",
+            end: "500px bottom",
+            toggleActions: "play none none reverse",
+          },
+          x: -190,
+          y: -160,
+          rotate: 40,
+        }
+      );
+    });
     gsap.fromTo(
       textRef.current,
       {

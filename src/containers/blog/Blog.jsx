@@ -37,7 +37,6 @@ const Blog = () => {
       {
         y: 0,
         opacity: 1,
-        ease: "expo.out",
         duration: 0.8,
       }
     );
@@ -51,7 +50,6 @@ const Blog = () => {
       {
         y: 0,
         opacity: 1,
-        ease: "expo.out",
       }
     );
   });

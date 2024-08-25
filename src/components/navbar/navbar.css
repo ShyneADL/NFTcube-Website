@@ -3,6 +3,7 @@
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 .nft__navbar-links {
@@ -13,7 +14,7 @@
 }
 
 .nft__navbar-links_logo {
-  margin-right: 2rem;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 .nft__navbar-links_logo img {
@@ -53,7 +54,6 @@
   font-size: 1.125rem;
   line-height: 1.5625rem;
   text-transform: capitalize;
-
   margin: 0 1rem;
   cursor: pointer;
 }
@@ -75,7 +75,6 @@
 
 .nft__navbar-menu {
   margin-left: 1rem;
-
   display: none;
   position: relative;
 }
@@ -89,7 +88,6 @@
   justify-content: flex-end;
   align-items: flex-end;
   flex-direction: column;
-
   text-align: end;
   background: var(--color-footer);
   padding: 2rem;

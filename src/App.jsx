@@ -1,6 +1,5 @@
-import React from 'react'
-import './App.css'
-
+import React from "react";
+import "./App.css";
 
 import {
   Blog,
@@ -8,28 +7,27 @@ import {
   Footer,
   Header,
   Nftcube,
-  Possibility
-} from './containers'
+  Possibility,
+} from "./containers";
 
-import {Navbar, Brand, CTA} from './components'
+import { Navbar, Brand, CTA } from "./components";
 
 const App = () => {
   return (
-    <div className='App'>
-      <div className='gradient__bg'>
-        <Navbar/>
-        <Header/>
+    <div className="App">
+      <div className="gradient__bg">
+        <Navbar />
+        <Header />
       </div>
-      <Brand/>
-      <Nftcube/>
-      <Features/>
-      <Possibility/>
-      <CTA/>
+      <Brand />
+      <Nftcube />
+      <Features />
+      <Possibility />
+      <CTA />
       <Blog />
       <Footer />
-
     </div>
-  )
-}
+  );
+};
 
 export default App;
